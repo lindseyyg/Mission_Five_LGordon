@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Pricing Estimate";
+}
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+<h2>@ViewData["Title"]</h2>
+
+<h4>I'd love to help you become more creative!</h4>
+<p>
+    If you're interested in having me tutor you, fill out the form below to get a cost estimate.
+</p>
+<br />
+<h4>Price Estimate:</h4>
+<label for="hours">How many hours do you want me to tutor you?</label>
+<input type="text" id="hours" placeholder="Enter hours">
+<br />
+<label for="rate">My tutor rate is</label>
+<input type="text" id="rate" value="$20/hr" readonly>
+<br />
+<input type="button" id="calculateBtn" value="Calculate" />
+<br />
+<label for="total">The price to tutor you will be</label>
+<input type="text" id="total" readonly />
+
+<script src="~/js/site.js"></script>
